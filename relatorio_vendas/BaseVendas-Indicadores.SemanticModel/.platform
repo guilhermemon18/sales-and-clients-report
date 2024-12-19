@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "BaseVendas-Indicadores"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "66830a51-8449-4f5f-8499-5ed8bd7c6144"
+  }
+}

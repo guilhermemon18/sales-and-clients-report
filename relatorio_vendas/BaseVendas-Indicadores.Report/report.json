@@ -1,0 +1,141 @@
+{
+  "config": "{\"version\":\"5.52\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Crescimentos Matriz",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8e3404731d44a362ba16\",\"layouts\":[{\"id\":0,\"position\":{\"x\":572.2082585278276,\"y\":55.152603231597844,\"z\":1000,\"width\":541.1849192100539,\"height\":648.0430879712746,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseVendas.Faturamento Total\"},{\"queryRef\":\"BaseVendas.% Crescimento Mes Anterior\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Total\"},\"Name\":\"BaseVendas.Faturamento Total\",\"NativeReferenceName\":\"Faturamento Total\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"% Crescimento Mes Anterior\"},\"Name\":\"BaseVendas.% Crescimento Mes Anterior\",\"NativeReferenceName\":\"% Crescimento Mes Anterior\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 648.04,
+          "width": 541.18,
+          "x": 572.21,
+          "y": 55.15,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"dcb888960dee4879935e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.08617594254937,\"y\":55.152603231597844,\"z\":0,\"width\":530.8438061041293,\"height\":648.0430879712746,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseVendas.Faturamento Total\"},{\"queryRef\":\"BaseVendas.Faturamento do Mesmo Mes no Ano Anterior (y-1)\"},{\"queryRef\":\"BaseVendas.% Crescimento\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Total\"},\"Name\":\"BaseVendas.Faturamento Total\",\"NativeReferenceName\":\"Faturamento Total\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento do Mesmo Mes no Ano Anterior (y-1)\"},\"Name\":\"BaseVendas.Faturamento do Mesmo Mes no Ano Anterior (y-1)\",\"NativeReferenceName\":\"Faturamento do Mesmo Mes no Ano Anterior (y-1)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"% Crescimento\"},\"Name\":\"BaseVendas.% Crescimento\",\"NativeReferenceName\":\"% Crescimento\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"165.22441651705566D\"}}}},\"selector\":{\"metadata\":\"BaseVendas.Faturamento do Mesmo Mes no Ano Anterior (y-1)\"}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 648.04,
+          "width": 530.84,
+          "x": 16.09,
+          "y": 55.15,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Gráficos Faturamento Acumulado",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection242c391649ee1d49b7d2",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3dc851145e973c2392c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520.5026929982047,\"y\":0,\"z\":1000,\"width\":645.7450628366247,\"height\":623.9138240574506,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}],\"Y\":[{\"queryRef\":\"BaseVendas.Faturamento Acumulado\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Acumulado\"},\"Name\":\"BaseVendas.Faturamento Acumulado\",\"NativeReferenceName\":\"Faturamento Acumulado\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 623.91,
+          "width": 645.75,
+          "x": 520.50,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"afd9a05fe83d0424906c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.341113105924595,\"y\":0,\"z\":0,\"width\":500.9694793536804,\"height\":623.9138240574506,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseVendas.Faturamento Total\"},{\"queryRef\":\"BaseVendas.Faturamento Acumulado\"}],\"Rows\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Total\"},\"Name\":\"BaseVendas.Faturamento Total\",\"NativeReferenceName\":\"Faturamento Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Acumulado\"},\"Name\":\"BaseVendas.Faturamento Acumulado\",\"NativeReferenceName\":\"Faturamento Acumulado\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"BaseVendas.Faturamento Acumulado\"}}]}}}",
+          "filters": "[]",
+          "height": 623.91,
+          "width": 500.97,
+          "x": 10.34,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "KPI -  META MES PASSADO",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5cde6d5c00661c60a8c2",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"94f4b560d53430eb03b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":156.26570915619388,\"y\":257.37881508078993,\"z\":0,\"width\":473.3931777378815,\"height\":390.6642728904847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"BaseVendas.Faturamento Total\"}],\"TrendLine\":[{\"queryRef\":\"Calendario.Inicio do Mes\"}],\"Goal\":[{\"queryRef\":\"BaseVendas.Faturamento Mes Anterior\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Total\"},\"Name\":\"BaseVendas.Faturamento Total\",\"NativeReferenceName\":\"Faturamento Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Mes Anterior\"},\"Name\":\"BaseVendas.Faturamento Mes Anterior\",\"NativeReferenceName\":\"Faturamento Mes Anterior\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 390.66,
+          "width": 473.39,
+          "x": 156.27,
+          "y": 257.38,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"988b97d3ca9c182c84c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":167.75583482944344,\"y\":13.788150807899461,\"z\":1000,\"width\":531.9928186714542,\"height\":190.73608617594255,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2018-07-09T23:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2018-07-10T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 190.74,
+          "width": 531.99,
+          "x": 167.76,
+          "y": 13.79,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "KPI - META 10% MAIOR",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionb1afea0036c9c5204d63",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"271beab5340dade74bda\",\"layouts\":[{\"id\":0,\"position\":{\"x\":156.26570915619388,\"y\":257.37881508078993,\"z\":0,\"width\":473.3931777378815,\"height\":390.6642728904847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"BaseVendas.Faturamento Total\"}],\"TrendLine\":[{\"queryRef\":\"Calendario.Inicio do Mes\"}],\"Goal\":[{\"queryRef\":\"BaseVendas.Meta de Faturamento\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseVendas\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Faturamento Total\"},\"Name\":\"BaseVendas.Faturamento Total\",\"NativeReferenceName\":\"Faturamento Total\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Meta de Faturamento\"},\"Name\":\"BaseVendas.Meta de Faturamento\",\"NativeReferenceName\":\"Meta de Faturamento\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 390.66,
+          "width": 473.39,
+          "x": 156.27,
+          "y": 257.38,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a2054a40418597411e22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":167.75583482944344,\"y\":13.788150807899461,\"z\":1000,\"width\":531.9928186714542,\"height\":190.73608617594255,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendario.Inicio do Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"},\"Name\":\"Calendario.Inicio do Mes\",\"NativeReferenceName\":\"Inicio do Mes\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2018-03-03T23:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Inicio do Mes\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2018-03-04T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 190.74,
+          "width": 531.99,
+          "x": 167.76,
+          "y": 13.79,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

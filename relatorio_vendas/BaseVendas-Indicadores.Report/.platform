@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "BaseVendas-Indicadores"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e38289ef-1e26-438f-8d93-0d12032f9923"
+  }
+}

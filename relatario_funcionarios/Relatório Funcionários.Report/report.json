@@ -1,0 +1,384 @@
+{
+  "config": "{\"version\":\"5.52\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":4,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSectionfe75fe3a002a2350b1e1",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Logo5526131097253022.PNG",
+            "path": "Logo5526131097253022.PNG",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Exemplos Matriz",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"36c53052da0d101009dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.768402154398565,\"y\":537.737881508079,\"z\":4000,\"width\":572.2082585278276,\"height\":182.69299820466784,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 182.69,
+          "width": 572.21,
+          "x": 36.77,
+          "y": 537.74,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"51df717b01c8dae0e8c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":650.3411131059246,\"y\":158.5637342908438,\"z\":1000,\"width\":573.3572710951526,\"height\":234.39856373429083,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseFuncionarios.Qtde Funcionarios\"},{\"queryRef\":\"BaseFuncionarios.Qtde Funcionarios Atuais\"},{\"queryRef\":\"BaseFuncionarios.Qtde Cargos\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Qtde Funcionarios\"},\"Name\":\"BaseFuncionarios.Qtde Funcionarios\",\"NativeReferenceName\":\"Qtde Funcionarios\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Qtde Funcionarios Atuais\"},\"Name\":\"BaseFuncionarios.Qtde Funcionarios Atuais\",\"NativeReferenceName\":\"Qtde Funcionarios Atuais\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Qtde Cargos\"},\"Name\":\"BaseFuncionarios.Qtde Cargos\",\"NativeReferenceName\":\"Qtde Cargos\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 234.40,
+          "width": 573.36,
+          "x": 650.34,
+          "y": 158.56,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d67b800320424c0db88b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":52.85457809694793,\"y\":97.66606822262118,\"z\":0,\"width\":705.4937163375224,\"height\":589.443447037702,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Cargo\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseFuncionarios.Total de Salario\"},{\"queryRef\":\"BaseFuncionarios.Total Dias Trabalhados\"},{\"queryRef\":\"BaseFuncionarios.Salario por Dia de Trabalho\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cargo\"},\"Name\":\"BaseCargos.Cargo\",\"NativeReferenceName\":\"Cargo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Total de Salario\"},\"Name\":\"BaseFuncionarios.Total de Salario\",\"NativeReferenceName\":\"Total de Salario\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Total Dias Trabalhados\"},\"Name\":\"BaseFuncionarios.Total Dias Trabalhados\",\"NativeReferenceName\":\"Total Dias Trabalhados\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Salario por Dia de Trabalho\"},\"Name\":\"BaseFuncionarios.Salario por Dia de Trabalho\",\"NativeReferenceName\":\"Salario por Dia de Trabalho\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 589.44,
+          "width": 705.49,
+          "x": 52.85,
+          "y": 97.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f1d11c790341d015eeb9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":629.6588868940754,\"y\":340.1077199281867,\"z\":2000,\"width\":572.2082585278276,\"height\":182.69299820466784,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseClientes.VALOR MEDIO P/ CONTRATO\"}],\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"VALOR MEDIO P/ CONTRATO\"},\"Name\":\"BaseClientes.VALOR MEDIO P/ CONTRATO\",\"NativeReferenceName\":\"VALOR MEDIO P/ CONTRATO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 182.69,
+          "width": 572.21,
+          "x": 629.66,
+          "y": 340.11,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f952b0b570d79806bb28\",\"layouts\":[{\"id\":0,\"position\":{\"x\":619.3177737881508,\"y\":522.8007181328545,\"z\":3000,\"width\":572.2082585278276,\"height\":182.69299820466784,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseClientes.Faturamento High Ticket\"},{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Faturamento High Ticket\"},\"Name\":\"BaseClientes.Faturamento High Ticket\",\"NativeReferenceName\":\"Faturamento High Ticket\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 182.69,
+          "width": 572.21,
+          "x": 619.32,
+          "y": 522.80,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Funcionários Mapa Simples",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection3631e6c943909cb1353e",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"87fea5780a446510e903\",\"layouts\":[{\"id\":0,\"position\":{\"x\":315.5514365152919,\"y\":21.3531047265987,\"z\":1000,\"width\":919.3697868396663,\"height\":682.1130676552363,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"BaseCEP.Estado\",\"active\":true}],\"Size\":[{\"queryRef\":\"BaseFuncionarios.Qtde Funcionarios\"}],\"Series\":[{\"queryRef\":\"BaseCargos.Nível\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCEP\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseFuncionarios\",\"Type\":0},{\"Name\":\"b2\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Estado\"},\"Name\":\"BaseCEP.Estado\",\"NativeReferenceName\":\"Estado\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Qtde Funcionarios\"},\"Name\":\"BaseFuncionarios.Qtde Funcionarios\",\"NativeReferenceName\":\"Qtde Funcionarios\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b2\"}},\"Property\":\"Nível\"},\"Name\":\"BaseCargos.Nível\",\"NativeReferenceName\":\"Nível\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BaseFuncionarios\"}},\"Property\":\"Qtde Funcionarios\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#E66C37'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#0CED6A'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}},{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 682.11,
+          "width": 919.37,
+          "x": 315.55,
+          "y": 21.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aaa6bde187c03032ad33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":90.1575532900834,\"z\":0,\"width\":227.76645041705282,\"height\":279.96292863762744,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseFuncionarios.Nome\"},{\"queryRef\":\"Sum(BaseFuncionarios.SalarioTotal)\"},{\"queryRef\":\"Sum(BaseFuncionarios.Impostos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5},\"Name\":\"BaseFuncionarios.Nome\",\"NativeReferenceName\":\"Quantidade de Funcionários\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"SalarioTotal\"}},\"Function\":0},\"Name\":\"Sum(BaseFuncionarios.SalarioTotal)\",\"NativeReferenceName\":\"Soma de SalarioTotal\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Impostos\"}},\"Function\":0},\"Name\":\"Sum(BaseFuncionarios.Impostos)\",\"NativeReferenceName\":\"Soma de Impostos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5}}}]},\"columnProperties\":{\"BaseFuncionarios.Nome\":{\"displayName\":\"Quantidade de Funcionários\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 279.96,
+          "width": 227.77,
+          "x": 0.00,
+          "y": 90.16,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d5aac3b1a5e4799d85e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":277.5903614457831,\"z\":2000,\"width\":315.5514365152919,\"height\":425.8758109360519,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseCEP.Região\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCEP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Região\"},\"Name\":\"BaseCEP.Região\",\"NativeReferenceName\":\"Região\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 425.88,
+          "width": 315.55,
+          "x": 0.00,
+          "y": 277.59,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Resumo Geral",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection9e4c3cb19b1551ca30ec",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"06b2b1b9bbb89d818511\",\"layouts\":[{\"id\":0,\"position\":{\"x\":847.9712746858169,\"y\":0,\"z\":5000,\"width\":247.03770197486534,\"height\":58.59964093357271,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Funcionários\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 58.60,
+          "width": 247.04,
+          "x": 847.97,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"121201079c1ab1be02a6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":515.9066427289048,\"y\":29.87432675044883,\"z\":2000,\"width\":247.03770197486534,\"height\":690.556552962298,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}},\"linecapType\":{\"expr\":{\"Literal\":{\"Value\":\"'flat'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 690.56,
+          "width": 247.04,
+          "x": 515.91,
+          "y": 29.87,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"17eb67016e033de35852\",\"layouts\":[{\"id\":0,\"position\":{\"x\":247.03770197486534,\"y\":0,\"z\":4000,\"width\":118.34829443447038,\"height\":49.40754039497307,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Clientes\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 49.41,
+          "width": 118.35,
+          "x": 247.04,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"1b769782a53905203952\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1061.7238183503243,\"y\":482.8174235403151,\"z\":7000,\"width\":218.2761816496756,\"height\":129.30491195551437,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 129.30,
+          "width": 218.28,
+          "x": 1061.72,
+          "y": 482.82,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"2a8dddf0b5db96e85639\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1059.35125115848,\"y\":612.1223354958295,\"z\":8000,\"width\":219.46246524559777,\"height\":107.95180722891565,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"},{\"queryRef\":\"Sum(BaseFuncionarios.SalarioTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"SalarioTotal\"}},\"Function\":0},\"Name\":\"Sum(BaseFuncionarios.SalarioTotal)\",\"NativeReferenceName\":\"Soma de SalarioTotal\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Total Valor de Contrato\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 107.95,
+          "width": 219.46,
+          "x": 1059.35,
+          "y": 612.12,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"37ed4ce7a14a9d466e66\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":247.03770197486534,\"height\":248.1867145421903,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Logo5526131097253022.PNG\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 248.19,
+          "width": 247.04,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4ecf55051642315d333a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":248.1867145421903,\"z\":3000,\"width\":630.8078994614003,\"height\":472.2441651705565,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(BaseClientes.Cliente)\"}],\"Category\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":5},\"Name\":\"CountNonNull(BaseClientes.Cliente)\",\"NativeReferenceName\":\"Contagem de Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 472.24,
+          "width": 630.81,
+          "x": 0.00,
+          "y": 248.19,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b434c23617b0ad08a136\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.593141797961,\"y\":438.92493049119554,\"z\":9000,\"width\":421.1306765523633,\"height\":281.1492122335496,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(BaseFuncionarios.Nome)\"}],\"Category\":[{\"queryRef\":\"BaseCargos.Quadro\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5},\"Name\":\"CountNonNull(BaseFuncionarios.Nome)\",\"NativeReferenceName\":\"Contagem de Nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Quadro\"},\"Name\":\"BaseCargos.Quadro\",\"NativeReferenceName\":\"Quadro\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data value, percent of total'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 281.15,
+          "width": 421.13,
+          "x": 640.59,
+          "y": 438.92,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"cc9fb9e8c02514da010b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":256.22980251346496,\"y\":71.23877917414721,\"z\":1000,\"width\":307.935368043088,\"height\":248.1867145421903,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}],\"Values\":[{\"queryRef\":\"Min(BaseClientes.Cliente)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Cliente\"}},\"Function\":2},\"Name\":\"Min(BaseClientes.Cliente)\",\"NativeReferenceName\":\"Contagem de Cliente\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 248.19,
+          "width": 307.94,
+          "x": 256.23,
+          "y": 71.24,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"dc85d8ceacdd8d24444c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":58.59964093357271,\"z\":6000,\"width\":640,\"height\":367.68402154398564,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Ano\"},{\"queryRef\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Trimestre\"},{\"queryRef\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Mês\",\"active\":true},{\"queryRef\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Dia\"}],\"Y\":[{\"queryRef\":\"CountNonNull(BaseFuncionarios.Data de Contratacao)\"}],\"Series\":[{\"queryRef\":\"BaseCargos.Nível\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Data de Contratacao\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data de Contratacao Ano1\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Data de Contratacao\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Trimestre\"},\"Name\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Trimestre\",\"NativeReferenceName\":\"Data de Contratacao Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Data de Contratacao\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"Data de Contratacao Mês\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Data de Contratacao\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Dia\"},\"Name\":\"BaseFuncionarios.Data de Contratacao.Variation.Hierarquia de datas.Dia\",\"NativeReferenceName\":\"Data de Contratacao Dia\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Data de Contratacao\"}},\"Function\":5},\"Name\":\"CountNonNull(BaseFuncionarios.Data de Contratacao)\",\"NativeReferenceName\":\"Data de Contratacao Ano\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Nível\"},\"Name\":\"BaseCargos.Nível\",\"NativeReferenceName\":\"Nível\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 367.68,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 58.60,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Funcionários",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionb41d79a95dba0d36b91b",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6fa206301088ed88a650\",\"layouts\":[{\"id\":0,\"position\":{\"x\":315.5514365152919,\"y\":21.3531047265987,\"z\":1000,\"width\":919.3697868396663,\"height\":682.1130676552363,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"BaseCEP.Estado\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"BaseFuncionarios.Qtde Funcionarios\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCEP\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Estado\"},\"Name\":\"BaseCEP.Estado\",\"NativeReferenceName\":\"Estado\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Qtde Funcionarios\"},\"Name\":\"BaseFuncionarios.Qtde Funcionarios\",\"NativeReferenceName\":\"Qtde Funcionarios\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BaseFuncionarios\"}},\"Property\":\"Qtde Funcionarios\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#E66C37'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#0CED6A'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}},{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 682.11,
+          "width": 919.37,
+          "x": 315.55,
+          "y": 21.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ac33a1f0055d65d4a5a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":90.1575532900834,\"z\":0,\"width\":227.76645041705282,\"height\":279.96292863762744,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseFuncionarios.Nome\"},{\"queryRef\":\"Sum(BaseFuncionarios.SalarioTotal)\"},{\"queryRef\":\"Sum(BaseFuncionarios.Impostos)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5},\"Name\":\"BaseFuncionarios.Nome\",\"NativeReferenceName\":\"Quantidade de Funcionários\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"SalarioTotal\"}},\"Function\":0},\"Name\":\"Sum(BaseFuncionarios.SalarioTotal)\",\"NativeReferenceName\":\"Soma de SalarioTotal\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Impostos\"}},\"Function\":0},\"Name\":\"Sum(BaseFuncionarios.Impostos)\",\"NativeReferenceName\":\"Soma de Impostos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome\"}},\"Function\":5}}}]},\"columnProperties\":{\"BaseFuncionarios.Nome\":{\"displayName\":\"Quantidade de Funcionários\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 279.96,
+          "width": 227.77,
+          "x": 0.00,
+          "y": 90.16,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Exemplo Matriz",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionb9bb616062d8d51c569c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"dca1214b34000d8196c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":220.61041292639138,\"y\":263.1238779174147,\"z\":0,\"width\":560.718132854578,\"height\":280.359066427289,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}],\"Values\":[{\"queryRef\":\"BaseClientes.Maior Ticket\"},{\"queryRef\":\"Sum(BaseClientes.Valor por Serviço)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Maior Ticket\"},\"Name\":\"BaseClientes.Maior Ticket\",\"NativeReferenceName\":\"Maior Ticket\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Valor por Serviço\"}},\"Function\":4},\"Name\":\"Sum(BaseClientes.Valor por Serviço)\",\"NativeReferenceName\":\"Máximo de Valor por Serviço\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.36,
+          "width": 560.72,
+          "x": 220.61,
+          "y": 263.12,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Clientes",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionfe75fe3a002a2350b1e1",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"04209ee02e7d80b86240\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":6000,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"1dae4d902276c3040409\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1000.0370713623726,\"y\":411.64040778498605,\"z\":7000,\"width\":279.96292863762744,\"height\":154.2168674698795,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(BaseClientes.Valor por Serviço)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Valor por Serviço\"}},\"Function\":1},\"Name\":\"Sum(BaseClientes.Valor por Serviço)\",\"NativeReferenceName\":\"Ticket Médio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Valor por Serviço\"}},\"Function\":1}}}]},\"columnProperties\":{\"Sum(BaseClientes.Valor por Serviço)\":{\"displayName\":\"Ticket Médio\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 154.22,
+          "width": 279.96,
+          "x": 1000.04,
+          "y": 411.64,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"21962e6000dac9d44597\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.619389587073606,\"y\":348.15080789946137,\"z\":1000,\"width\":576.8043087971274,\"height\":372.2800718132854,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true},{\"queryRef\":\"BaseClientes.Critico\",\"active\":true},{\"queryRef\":\"BaseClientes.Cliente\"}],\"Values\":[{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"},{\"queryRef\":\"Sum(BaseClientes.Valor por Serviço)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"},\"Name\":\"BaseClientes.Cliente\",\"NativeReferenceName\":\"Cliente\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Valor por Serviço\"}},\"Function\":1},\"Name\":\"Sum(BaseClientes.Valor por Serviço)\",\"NativeReferenceName\":\"Média de Valor por Serviço\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Critico\"},\"Name\":\"BaseClientes.Critico\",\"NativeReferenceName\":\"Critico\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"BaseCargos.Área\"],\"isPinned\":true},{\"queryRefs\":[\"BaseClientes.Critico\"],\"isCollapsed\":true,\"isPinned\":true},{\"queryRefs\":[\"BaseClientes.Cliente\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"BaseClientes.Total Valor de Contrato\"}}],\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BaseClientes\"}},\"Property\":\"Valor por Serviço\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#458A66'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Sum(BaseClientes.Valor por Serviço)\"}}]}}}",
+          "filters": "[]",
+          "height": 372.28,
+          "width": 576.80,
+          "x": 35.62,
+          "y": 348.15,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"39e5fdf5a490470b47b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":993.8958707360862,\"y\":565.3141831238779,\"z\":4000,\"width\":286.1041292639138,\"height\":155.11669658886893,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 155.12,
+          "width": 286.10,
+          "x": 993.90,
+          "y": 565.31,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"75e5aea73bc1c105c0d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":658.3873957367933,\"y\":564.6709916589434,\"z\":5000,\"width\":341.6496756255792,\"height\":155.40315106580167,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(BaseClientes.Cliente)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":3},\"Name\":\"Min(BaseClientes.Cliente)\",\"NativeReferenceName\":\"Cliente de Maior Valor de Contrato\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":5}}}]},\"columnProperties\":{\"Min(BaseClientes.Cliente)\":{\"displayName\":\"Cliente de Maior Valor de Contrato\"}},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter696bcca69784a9b5304c\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BaseClientes\"}},\"Property\":\"Cliente\"}},\"Function\":3}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter681c7ff260e074cd1929\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"BaseClientes\"}},\"Property\":\"Cliente\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Valor Contrato Anual\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"ordinal\":1}]",
+          "height": 155.40,
+          "width": 341.65,
+          "x": 658.39,
+          "y": 564.67,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8efe4e2b4125808528e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.1223354958295,\"y\":142.35403151065802,\"z\":8000,\"width\":438.92493049119554,\"height\":269.28637627432806,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(BaseClientes.Cliente)\"}],\"Group\":[{\"queryRef\":\"BaseCargos.Nível\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":5},\"Name\":\"CountNonNull(BaseClientes.Cliente)\",\"NativeReferenceName\":\"Contagem de Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Nível\"},\"Name\":\"BaseCargos.Nível\",\"NativeReferenceName\":\"Nível\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.29,
+          "width": 438.92,
+          "x": 612.12,
+          "y": 142.35,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"a8c84b3765a7dc0507b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":19.533213644524235,\"z\":0,\"width\":612.4236983842011,\"height\":310.23339317773787,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Y2\":[{\"queryRef\":\"CountNonNull(BaseClientes.Cliente)\"}],\"Y\":[{\"queryRef\":\"BaseClientes.Total Valor de Contrato\"}],\"Category\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}],\"Series\":[{\"queryRef\":\"BaseClientes.Critico\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseClientes\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cliente\"}},\"Function\":5},\"Name\":\"CountNonNull(BaseClientes.Cliente)\",\"NativeReferenceName\":\"Contagem de Cliente\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"},\"Name\":\"BaseClientes.Total Valor de Contrato\",\"NativeReferenceName\":\"Total Valor de Contrato\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Critico\"},\"Name\":\"BaseClientes.Critico\",\"NativeReferenceName\":\"Critico\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Valor de Contrato\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Auto'\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 310.23,
+          "width": 612.42,
+          "x": 0.00,
+          "y": 19.53,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bdb539062d66c9c787d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":712.3877917414721,\"y\":24.129263913824055,\"z\":3000,\"width\":287.2531418312388,\"height\":150.52064631956912,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseCalendario.Datas\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCalendario\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Datas\"},\"Name\":\"BaseCalendario.Datas\",\"NativeReferenceName\":\"Datas\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Datas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}},\"relativeRange\":{\"expr\":{\"Literal\":{\"Value\":\"'Last'\"}}},\"relativeDuration\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"relativePeriod\":{\"expr\":{\"Literal\":{\"Value\":\"'Years'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCalendario\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Between\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Datas\"}},\"LowerBound\":{\"DateSpan\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"Now\":{}},\"Amount\":1,\"TimeUnit\":0}},\"Amount\":-10,\"TimeUnit\":3}},\"TimeUnit\":0}},\"UpperBound\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":0}}}}}]}}}}],\"dateRange\":[{\"properties\":{\"includeToday\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.52,
+          "width": 287.25,
+          "x": 712.39,
+          "y": 24.13,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d69e9ca5d7e418bb4c45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.5188509874326,\"y\":0,\"z\":2000,\"width\":196.48114901256733,\"height\":182.69299820466784,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BaseCargos.Área\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseCargos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Área\"},\"Name\":\"BaseCargos.Área\",\"NativeReferenceName\":\"Área\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 182.69,
+          "width": 196.48,
+          "x": 1083.52,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

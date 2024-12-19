@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Relatório Funcionários"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bdd6755e-1154-4ff2-bd20-75d70754ea9c"
+  }
+}

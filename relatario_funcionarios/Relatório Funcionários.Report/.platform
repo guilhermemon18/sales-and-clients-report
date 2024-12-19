@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Relatório Funcionários"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6d5bda85-0031-42e9-852e-f9e1e242ea79"
+  }
+}
